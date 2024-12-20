@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            body,html{
+              background-color: rgb(119, 102, 102);
+                margin: 0%;
+                padding: 0%;
+                height: 100%;
+            }
+            p{
+              font-size: 100%;
+             font-weight: bold;
+            }
+            .container{
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            .box{
+                text-align: center;
+                background-color: rgb(184, 196, 199);
+                text-align: center;
+                padding: 20px 100px;
+                border-radius: 20px;
+            }
+            .boxx{
+              text-align: center;
+            }
+            button{
+                background-color: black;
+                color: aliceblue;
+                padding: 20px;
+                border-radius: 100px;
+            
+            }
+            .good-mornig{
+              text-align: center;
+              
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+    <div class="boxx">
+      <p id="text">Good Morning</p>
+      <div class="box"> <br><br><br>
+
+          <button onclick="decr()">Decrement</button>
+         <button onclick="incr()">Increment</button>
+         <p id="counter">0</p>
+      </div>
+    </div>
+            
+        </div>
+        <script>
+          let Counter=0;
+          let a=16;
+          let b=2;
+          function incr(){
+            if (counter<0){
+            return;
+            }
+            document.getElementById("counter").innerHTML= ++Counter;
+            document.getElementById("text").style.fontSize=(a+Counter*b) +"px";
+          }
+          function decr(){
+            if (counter<0){
+              return;
+              }
+            document.getElementById("counter").innerHTML= --Counter;
+                document.getElementById("text").style.fontSize=(a+ Counter*b)+"px";
+          }
+        </script>
+    </body>
+</html> 
